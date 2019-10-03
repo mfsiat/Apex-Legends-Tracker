@@ -17,11 +17,6 @@ if(process.env.NODE_ENV === 'development') {
 // Profile Routes
 app.use('/api/v1/profile', require('./routes/profile'));
 
-app.get('/api/v1/profile/:platform/:gamertag', (req, res) => {
-  console.log(req.params.platform, req.params.gamertag);
-  res.send('Hello');
-})
-
 // It will look at our port from the .env
 const port = process.env.PORT || 8000;
 
