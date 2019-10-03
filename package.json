@@ -1,0 +1,21 @@
+{
+  "name": "apex-tracker",
+  "version": "1.0.0",
+  "description": "API key :: 2132ff93-7f4b-4fb4-8a49-db538fc38074",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MD. Nasirul islam",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
