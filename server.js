@@ -9,6 +9,9 @@ dotenv.config({ path: './config.env' });
 // Creating the basic express server
 const app = express();
 
+// Profile Routes
+app.use('/api/v1/profile', require('./routes/profile'));
+
 app.get('/api/v1/profile/:platform/:gamertag', (req, res) => {
   console.log(req.params.platform, req.params.gamertag);
   res.send('Hello');

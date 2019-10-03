@@ -4,7 +4,7 @@
 
 - This is a simple app build for searching players gaming information. 
 
-- Uses react and express
+- Uses node & express for backend and vue for front end
 
 - API: 
 
