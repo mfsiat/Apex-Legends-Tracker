@@ -4,7 +4,8 @@
   "description": "API key :: 2132ff93-7f4b-4fb4-8a49-db538fc38074",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "server": "nodemon server"
   },
   "author": "MD. Nasirul islam",
   "license": "ISC",
