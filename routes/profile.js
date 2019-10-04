@@ -16,10 +16,13 @@ router.get('/:platform/:platformUserIdentifier', async (req, res) => {
         headers
       }
     );
+    // console.log(response);
 
     const data = await response.json();
 
+    // console.log(res.json(data));
     res.json(data);
+    // console.log(data);
   } catch (err) {
     console.error(err);
     res.status(500).json({
