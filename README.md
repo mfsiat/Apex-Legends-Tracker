@@ -24,4 +24,6 @@ There are several reasons behind building our server script. Well we could just 
 
 - It's not really secured. As we have an __API key__ we want to keep it on the server side. So it's safe on our server and can't be accessed rom our server. 
 
-- Well we are constructing our own __API__ So we have full control over it. 
+- Well we are constructing our own __API__ So we have full control over it. Like we are able to send _status code_, _response time_, _size_, _message body_ etc. Every thing is modified.
+
+- It's a production application so backend is really important. 
