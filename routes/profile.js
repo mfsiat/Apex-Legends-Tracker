@@ -21,6 +21,14 @@ router.get('/:platform/:platformUserIdentifier', async (req, res) => {
     const data = await response.json();
 
     // console.log(res.json(data));
+
+    if(data.errors && data.errors.length > 1) {
+      return res.status(404).json({
+        message: 'Profile Not Found'
+      });
+    }
+
+
     res.json(data);
     // console.log(data);
   } catch (err) {
