@@ -29,3 +29,8 @@ There are several reasons behind building our server script. Well we could just 
 - It's a production application so backend is really important. 
 
 - We have full control over our application and the __API__
+
+
+### To run both backend and frontend at the same time 
+
+- We will use concurently to run both back and front at the same time. 
