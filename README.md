@@ -27,3 +27,5 @@ There are several reasons behind building our server script. Well we could just 
 - Well we are constructing our own __API__ So we have full control over it. Like we are able to send _status code_, _response time_, _size_, _message body_ etc. Every thing is modified.
 
 - It's a production application so backend is really important. 
+
+- We have full control over our application and the __API__
