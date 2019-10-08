@@ -8,10 +8,10 @@ router.get('/:platform/:platformUserIdentifier', async (req, res) => {
       'TRN-Api-Key': process.env.TRACKER_API_KEY
     };
 
-    const { platform, platformUserIdentifier } = req.params;
+    const { platform, gamertag } = req.params;
 
     const response = await fetch(
-      `${process.env.TRACKER_API_URL}/profile/${platform}/${platformUserIdentifier}`,
+      `${process.env.TRACKER_API_URL}/profile/${platform}/${gamertag}`,
       {
         headers
       }
