@@ -34,3 +34,9 @@ There are several reasons behind building our server script. Well we could just 
 ### To run both backend and frontend at the same time 
 
 - We will use concurently to run both back and front at the same time. 
+
+### Extra
+
+- To view the background image we used lifecycle method. 
+
+- The code is in the search.vue
