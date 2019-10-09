@@ -10,9 +10,6 @@
 
 - We are using __Toasted__ for the visual interaction
 
-- API: 
-
-`API key :: 2132ff93-7f4b-4fb4-8a49-db538fc38074`
 
 
 
@@ -35,7 +32,7 @@ There are several reasons behind building our server script. Well we could just 
 
 ### To run both backend and frontend at the same time 
 
-- We will use concurently to run both back and front at the same time. 
+- We will use **concurently** to run both back and front at the same time. 
 
 ### Extra
 
