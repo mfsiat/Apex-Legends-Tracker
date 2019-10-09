@@ -10,7 +10,7 @@ router.get('/:platform/:platformUserIdentifier', async (req, res) => {
 
     const { platform, gamertag } = req.params;
 
-    const response = await fetch(
+    const res = await fetch(
       `${process.env.TRACKER_API_URL}/profile/${platform}/${gamertag}`,
       {
         headers
@@ -18,7 +18,7 @@ router.get('/:platform/:platformUserIdentifier', async (req, res) => {
     );
     // console.log(response);
 
-    const data = await response.json();
+    const data = await res.json();
 
     // console.log(res.json(data));
 
