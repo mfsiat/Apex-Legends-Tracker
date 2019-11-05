@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 
-router.get('/:platform/:platformUserIdentifier', async (req, res) => {
+router.get('/:platform/:gamertag', async (req, res) => {
   try {
     const headers = {
       'TRN-Api-Key': process.env.TRACKER_API_KEY
@@ -10,31 +10,26 @@ router.get('/:platform/:platformUserIdentifier', async (req, res) => {
 
     const { platform, gamertag } = req.params;
 
-    const res = await fetch(
+    const response = await fetch(
       `${process.env.TRACKER_API_URL}/profile/${platform}/${gamertag}`,
       {
         headers
       }
     );
-    // console.log(response);
 
-    const data = await res.json();
+    const data = await response.json();
 
-    // console.log(res.json(data));
-
-    if(data.errors && data.errors.length > 0) {
+    if (data.errors && data.errors.length > 0) {
       return res.status(404).json({
         message: 'Profile Not Found'
       });
     }
 
-
     res.json(data);
-    // console.log(data);
   } catch (err) {
     console.error(err);
     res.status(500).json({
-      message: "Error!!!!!!!"
+      message: 'Server Error'
     });
   }
 });
