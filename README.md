@@ -7,3 +7,8 @@
 - App is now active and shows user's info
 
 - Deployed on heroku - [Click Here](https://desolate-inlet-79375.herokuapp.com/)
+
+
+## Screenshot
+
+![](https://github.com/mfsiat/Apex-Legends-Tracker/blob/master/apltracker.gif)
