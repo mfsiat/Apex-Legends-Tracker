@@ -1,5 +1,5 @@
 # Apex Legend Player Tracker
-
+[![Linting Process](https://github.com/mfsiat/ApexTracker/actions/workflows/ci.yml/badge.svg)](https://github.com/mfsiat/ApexTracker/actions/workflows/ci.yml)
 [![Build Status](https://travis-ci.org/mfsiat/Apex-Legends-Tracker.svg?branch=master)](https://travis-ci.org/mfsiat/Apex-Legends-Tracker)
 
 - Shows stats for **_apex-legends_** player using the **trackernetwork** public api.
@@ -12,3 +12,4 @@
 ## Screenshot
 
 ![](https://github.com/mfsiat/Apex-Legends-Tracker/blob/master/apltracker.gif)
+
